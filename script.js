@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 //All info.
 
 var id;
@@ -58,7 +53,7 @@ var priceMax = 0;
         <div class="left" style="display: flex;align-items: center;justify-content: stretch;gap: 15px;flex-grow: 1;">
             <img src="Assets/icons8-amazon-96.svg" class="logo" alt="" style="cursor: pointer;" onclick="goTo('index')">
             <form action="#" style="display: flex;align-items: center;">
-                <input type="text" class="search-product" id="fix-search" placeholder="Chercher un produit une marque ou categotie...">
+                <input type="text" class="search" id="fix-search" placeholder="Chercher un produit une marque ou categotie...">
                 <img src="Assets/search.svg" style="width: 30px;height: 30px;margin-left: 25px;display: none;cursor: pointer;" alt="" id="search-icon" onclick="results()">
             </form>
         </div>
@@ -192,7 +187,7 @@ var priceMax = 0;
             <div class="comments">
                 <div class="comment" id="comment1">
                     <div  style="display: flex;gap: 0px;flex-wrap: wrap;">
-                        <img src="Assets/pic3.webp" alt="" style="width: 50px;height: 50px;border-radius: 50%;">
+                        <img src="Assets/pic3.jpg" alt="" style="width: 50px;height: 50px;border-radius: 50%;">
                         <p id="username" style="margin-left: 25px;">Laura Martinez</p>
                         <div class="wrapping">
                             <img src="Assets/yellowStar.svg" alt="">
@@ -207,7 +202,7 @@ var priceMax = 0;
                 </div>
                 <div class="comment" id="comment2">
                     <div  style="display: flex;gap: 0px;flex-wrap: wrap;">
-                        <img src="Assets/pic1.webp" alt="" style="width: 50px;height: 50px;border-radius: 50%;">
+                        <img src="Assets/pic1.jpg" alt="" style="width: 50px;height: 50px;border-radius: 50%;">
                         <p id="username" style="margin-left: 25px;">Mike Deterson</p>
                         <div class="wrapping">
                             <img src="Assets/yellowStar.svg" alt="">
@@ -222,7 +217,7 @@ var priceMax = 0;
                 </div>
                 <div class="comment" id="comment3">
                     <div  style="display: flex;gap: 0px;flex-wrap: wrap;">
-                        <img src="Assets/pic2.svg" alt="" style="width: 50px;height: 50px;border-radius: 50%;">
+                        <img src="Assets/pic2.jpg" alt="" style="width: 50px;height: 50px;border-radius: 50%;">
                         <p id="username" style="margin-left: 25px;">Carlos Piata</p>
                         <div class="wrapping">
                             <img src="Assets/yellowStar.svg" alt="">
@@ -300,6 +295,7 @@ var priceMax = 0;
             <a href="secondary/about.html">About</a>
             <a href="secondary/support.html">About</a>
             <a href="secondary/faq.html">About</a>
+            <a href="cart.html">test</a>
         </div>
         <div>
             <p>Copyright 2023 &copy;. All rights reserved</p>
