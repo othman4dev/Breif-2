@@ -300,7 +300,6 @@ var priceMax = 0;
             <a href="secondary/about.html">About</a>
             <a href="secondary/support.html">About</a>
             <a href="secondary/faq.html">About</a>
-            <a href="cart.html">test</a>
         </div>
         <div>
             <p>Copyright 2023 &copy;. All rights reserved</p>
