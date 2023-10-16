@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wishe store page">
+    <meta name="keywords" content="E-commerce, Products, Clothes, Buy, Whishe, Amazon, Prices">
+    <meta name="author" content="Othman Kharbouch">
+    <link rel="stylesheet" href="style.css">
+    <title>Your cart</title>
+</head>
+<body>
+    <header>
+        <div class="left" style="display: flex;align-items: center;justify-content: stretch;gap: 15px;flex-grow: 1;">
+            <img src="Assets/icons8-amazon-96.svg" class="logo" alt="" style="cursor: pointer;" onclick="goTo('index')">
+            <form action="#" style="display: flex;flex-grow: 1;align-items: center;">
+                <input type="text" class="search" placeholder="Chercher un produit une marque ou categotie..." onkeyup="searchIt(this)" id="search">
+                <img src="Assets/search.svg" style="width: 30px;height: 30px;margin-left: 25px;display: none;cursor: pointer;" alt="" id="search-icon" onclick="results()">
+            </form>
+        </div>
+        <div class="right" style="display: flex;align-items: center;justify-content: right;margin-right: 15px;flex-wrap: nowrap;width: fit-content;margin-left: 15px;">
+            <div class="log" style="display: flex; gap: 5px;">
+                <button class="login" style="border-right:solid 2px #E2E8F0;">Sign in</button>
+                <button class="login">Create account</button>
+            </div>
+            <div class="country" style="display: flex;">
+                <img src="Assets/img.icons8.svg" class="morocco" alt="">
+                <p class="cCode">MAR</p>
+            </div>
+            <div class="cartbox" style="display: flex;">
+                <img src="Assets/icons8-cart-90 (1).svg" class="cart" alt="">
+                <p class="cart-items">5</p>
+            </div>
+        </div>
+    </header>
+    <main class="main" style="display: flex;gap: 25px;">
+        <section class="products-selected">
+            <div style="border: solid 1px #E2E8F0;height: 40px;display: flex;align-items: center;width: 100%;">
+                <div style="height: 100%;display: flex;align-items: center;"><input type="checkbox" id="checking" onchange="selectAll(this)"><label for="checking" style="border-left: solid 1px #E2E8F0;text-align: center;height: 100%;display: flex;align-items: center;justify-content: center;padding-left: 10px;" id="select-or-no">Select all products</label></div>
+            </div>
+            <div class="product-wrapper">
+                <div class="product-buy special">
+                    <div class="input-box"><input type="checkbox" name="select" id="one-p" class="selectMe" onchange="checkIfAllIsChecked();hereComesTheMoney(150,8,this,1)"></div>
+                    <div class="idk">
+                        <div class="product-pic not" id="products7" style="border-radius: 15pt;margin-top: 0px;transform: none;"></div>
+                        <div class="details">
+                            <p style="margin-left: 20px;margin-top: 30px;">TripleComfort Hoodie Pack</p>
+                            <div style="background-color: #cfe7f3;height: 30px;display: flex;align-items: center;border-radius: 15pt;font-size: 12px;width: 150px;justify-content: center;color:grey ;margin-left: 15px;">Selected Variants</div>
+                            <p style="margin-left: 20px;margin-top: 9px">$150</p>
+                            <p style="font-size: 10px;color: grey;margin-left: 20px;margin-top: -10px;">Shipping: $8</p>
+                        </div>
+                    </div>
+                    <div class="counter last">
+                        <button id="moins" onclick="minusOne1()">-</button>
+                        <p id="count1" class="count">1</p>
+                        <button id="plus" onclick="addOne1()">+</button>
+                    </div>
+                </div>
+                <div class="product-buy special">
+                    <div class="input-box"><input type="checkbox" name="select" id="two-p" class="selectMe" onchange="checkIfAllIsChecked();hereComesTheMoney(20,5,this,2)"></div>
+                    <div class="idk">
+                        <div class="product-pic not" id="products3" style="border-radius: 15pt;margin-top: 0px;transform: none;"></div>
+                        <div class="details">
+                            <p style="margin-left: 20px;margin-top: 30px;">SoundSync Wired Earbuds</p>
+                            <div style="background-color: #cfe7f3;height: 30px;display: flex;align-items: center;border-radius: 15pt;font-size: 12px;width: 150px;justify-content: center;color:grey ;margin-left: 15px;">Selected Variants</div>
+                            <p style="margin-left: 20px;margin-top: 9px">$20</p>
+                            <p style="font-size: 10px;color:grey ;margin-left: 20px;margin-top: -10px;">Shipping: $5</p>
+                        </div>
+                    </div>
+                    <div class="counter last">
+                        <button id="moins" onclick="minusOne2()">-</button>
+                        <p id="count2" class="count">1</p>
+                        <button id="plus" onclick="addOne2()">+</button>
+                    </div>
+                </div>
+                <div class="product-buy special">
+                    <div class="input-box"><input type="checkbox" name="select" id="tree-p" class="selectMe" alt="" onchange="checkIfAllIsChecked();hereComesTheMoney(399,12,this,3)"></div>
+                    <div class="idk">
+                        <div class="product-pic not" id="products5" style="border-radius: 15pt;margin-top: 0px;transform: none;"></div>
+                        <div class="details">
+                            <p style="margin-left: 20px;margin-top: 30px;">SkyCapture Pro</p>
+                            <div style="background-color: #cfe7f3;height: 30px;display: flex;align-items: center;border-radius: 15pt;font-size: 12px;width: 150px;justify-content: center;color:grey ;margin-left: 15px;">Selected Variants</div>
+                            <p style="margin-left: 20px;margin-top: 9px">$399</p>
+                            <p style="font-size: 10px;color: grey;margin-left: 20px;margin-top: -10px;">Shipping: $12</p>
+                        </div>
+                    </div>
+                    <div class="counter last">
+                        <button id="moins" onclick="minusOne3()">-</button>
+                        <p id="count3" class="count">1</p>
+                        <button id="plus" onclick="addOne3()">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="checkout">
+            <h3>Summery</h3>
+            <div class="elements">
+                <div class="lines"><p>Product price</p><p id="price-too">$0</p></div>
+            </div>
+            <div class="elements">
+                <div class="lines" style="color:grey ;font-size: 14px;"><p>Shipping fee</p><p id="fee-fee">$0</p></div>
+            </div>
+            <div class="elements">
+                <div class="lines"><p style="font-size: 20px;margin-top: 15px;">Total</p><p style="font-size: 20px;" id="total-money">$0</p></div>
+            </div>
+            <button class="Buy">Checkout</button>
+            <div class="elements">
+                <div class="lines" style="flex-wrap: wrap;"><p>Payment methods</p><p style="width: 100%;color:grey ;font-size: 15px;margin-top: -10px;margin-left: 20px;">paypal</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div style="transform: translateY(30px);">
+            <a href="secondary/about.html">About</a>
+            <a href="secondary/support.html">About</a>
+            <a href="secondary/faq.html">About</a>
+            <a href="search.html">test</a>
+        </div>
+        <div>
+            <p>Copyright 2023 &copy;. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
