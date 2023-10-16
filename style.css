@@ -1219,3 +1219,6 @@ input[type="checkbox"]:checked::before {
     text-align: center;
     color: rgb(244, 247, 243);
 }
+.input-box {
+    min-width:40px;
+}
